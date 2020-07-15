@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../../main ckt/maincss.css">
+    <title>Theory</title>
+  </head>
+  <body bgcolor="#000066">
+
+  	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+  	<ul>
+  	  <li ><img src="../../main ckt/aim.png" alt="Theory" height="70px" width="80px"><a  href="../../main ckt/main page/aim.html">Aim</a></li>
+	  <li ><img src="../../main ckt/theory.png" alt="Theory" height="70px" class="active" width="70px"><a  href="../../main ckt/theory page/theory.html">Theory</a></li>
+	  <li><img src="../../main ckt/Procedure.jpg" alt="Theory" height="70px" width="70px"><a href="../../main ckt/procedure/procedure.html">Procedure</a></li>
+	  <li><img src="../../main ckt/test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/index.html">Pre-Test</a></li>
+	  <li><img src="../../main ckt/simulation.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/simulator/sine.html">Simulation</a></li>
+	  <li><img src="../../main ckt\test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/postTest.html">Post-Test</a></li>
+	  <li><img src="../../main ckt/references.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/refres/references.html">References</a></li>
+	  <li><img src="../../main ckt/pdf.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/pdf generator/generatepdf.html">Generate PDF</a></li>
+	</ul>
+  		
+  	</div>
+  		
+
+  	<div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:30px; text-align:center;padding-top: 5px">
+    		 <b> Hartley Oscillator </b>
+    	</div>
+	    
+  	<h3 style="display: block; margin-left: 20px;">Theory:</h3>
+  	<p>
+  		An <b> amplifier</b> circuit simply increases the signal strength. But while amplifying, it just increases the strength of its input signal whether it contains information or some noise along with information. This noise or some disturbance is introduced in the amplifiers because of their strong tendency to introduce hum due to sudden temperature changes or stray electric and magnetic fields. Therefore, every high gain amplifier tends to give noise along with signal in its output, which is very undesirable.<br><br>
+
+		The noise level in the amplifier circuits can be considerably reduced by using negative feedback done by injecting a fraction of output in phase opposition to the input signal.
+  	</p>
+  	<h3 style="display: block; margin-left: 20px;" >What is a Feedback Amplifier?</h3>
+  	<p>The feedback-amplifier can be defined as an amplifier which has feedback lane that exists between o/p  to input. In this type of amplifier, feedback is the limitation which calculates the sum of feedback given in the following amplifier. The feedback factor is the ratio of the feedback signal and the input signal.</p>
+  	<img src="feedbackAMP.png" alt="feedbackAMP">
+  	<h3 style="display: block; margin-left: 20px;" >Types of Feedback Amplifiers:</h3>
+  	<p>
+  		<b> 1. Positive Feedback Amplifier:</b><br>
+		The positive feedback can be defined as when the feedback current otherwise voltage is applied for increasing the i/p voltage, then it is named as positive feedback. Direct feedback is another name of this positive feedback. Because positive feedback generates unnecessary distortion; it is not often used in amplifiers. But, it amplifies the original signal power and can be used in oscillator circuits.<br><br>
+
+		<b> 2. Negative Feedback Amplifier:</b><br>
+		The negative feedback can be defined as if the feedback current otherwise voltage can be applied for reducing the amplifier i/p, then it is called as negative feedback. Inverse feedback is another name of this negative feedback. This kind of feedback is regularly used in amplifier circuits.
+  	</p>
+  	<img src="positiveAndnegative.png" alt="feedback types" style="width: 530px">
+  	<h3 style="display: block; margin-left: 20px;" >What is an Oscillator?</h3>
+  	<p>
+  		An <b>Oscillator</b> is basically an Amplifier  with <b>“Positive Feedback”</b>, or regenerative feedback (in-phase) and without any external input signal that generates an output waveform of a desired frequency.<br>
+		An oscillator is basically a waveform generator which generates an output waveform, which oscillates with constant amplitude & constant desired frequency. 
+  	</p>	
+	<h3 style="display: block; margin-left: 20px;" >Barkhausen criterion:</h3>
+	<P>The frequency of oscillation at which sinusoidal oscillator operates is the frequency for which the total shift introduced, as the signal proceeds from the input terminals, through the amplifier and feedback network, and back again to the input, is precisely zero (or an integral multiple of<b> 2*Π</b>).</P>
+	<h4 style="text-align: center;">(OR)</h4>
+	<p>Stated simply the condition <b>A*β = -1</b> at <b>ω= ω<sub>o</sub></b>, i.e. the magnitude of loop gain should be one and phase of loop gain should be unity (the feedback network introduces 180<sup>0</sup> phase shift, the other 180<sup>0</sup> phase shift is provided by Amplifier) is called Barkhausen criterion.</p>
+	<img src="blockdiag.png" alt="block diagram">
+	<p>A closed loop system with negative feedback can be represented by a transfer function =<b> A/(1+A*β)</b>. Often feedback network consists of only resistive elements and is independent of frequency but amplifier gain is a function of frequency. Hence the loop gain A*β is a function of frequency. There may exist a frequency ω<sub>o</sub> at which its magnitude is one and phase is 180<sup>0</sup> i.e. A*β = -1 (Barkhausen criterion).</p>
+	<img src="typesoscillator.png" alt="types of oscillator">
+	<p>In the <b>Hartley Oscillator </b>the tuned LC circuit is connected between the collector and the base of a transistor amplifier. As far as the oscillatory voltage is concerned, the emitter is connected to a tapping point on the tuned circuit coil.<br>
+	The feedback part of the tuned LC tank circuit is taken from the centre tap of the inductor coil or even two separate coils in series which are in parallel with a variable capacitor, C as shown.<br>
+	An Hartley Oscillator circuit can be made from any configuration that uses either a single tapped coil (similar to an autotransformer) or a pair of series connected coils in parallel with a single capacitor as shown below.<br>
+	</p>
+	<h3 style="display: block; margin-left: 20px;">Basic Hartley Oscillator Design:</h3>
+	<img src="mainckt.png" alt="main ckt">
+	<p>
+	When the circuit is oscillating, the voltage at point X (collector), relative to point Y(emitter), is 180<sup>0</sup> out-of-phase with the voltage at point Z (base) relative to point Y. At the frequency of oscillation, the impedance of the Collector load is resistive and an increase in Base voltage causes a decrease in the Collector voltage.<br>
+	Then there is a 180<sup>0</sup> phase change in the voltage between the Base and Collector and this along with the original 180<sup>0</sup> phase shift in the feedback loop provides the correct phase relationship of positive feedback for oscillations to be maintained.<br>
+	The amount of feedback depends upon the position of the “tapping point” of the inductor. If this is moved nearer to the collector the amount of feedback is increased, but the output taken between the Collector and earth is reduced and vice versa. Resistors, R1 and R2 provide the usual stabilizing DC bias for the transistor in the normal manner while the capacitors act as DC-blocking capacitors.<br>
+	In this Hartley Oscillator circuit, the DC Collector current flows through part of the coil and for this reason the circuit is said to be “Series-fed” with the frequency of oscillation of the Hartley Oscillator being given as.<br>
+
+	</p>
+	<img src="formula.png" alt="formula">
+	<p><b>Note: </b> 
+	L<sub>T</sub> is the total cumulatively coupled inductance if two separate coils are used including their mutual inductance, M.<br>
+	The frequency of oscillations can be adjusted by varying the “tuning” capacitor, C or by varying the position of the iron-dust core inside the coil (inductive tuning) giving an output over a wide range of frequencies making it very easy to tune. Also the Hartley Oscillator produces an output amplitude which is constant over the entire frequency range.<br>
+	</p>
+	<img src="tank.png" alt="tank ckt">
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>
