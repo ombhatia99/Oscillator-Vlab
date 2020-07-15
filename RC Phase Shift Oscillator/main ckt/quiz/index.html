@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pre-Test</title>
+	<link rel="stylesheet" type="text/css" href="../../main ckt/maincss.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body bgcolor="#000066">
+	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+  	<ul>
+  	  <li ><img src="../../main ckt/aim.png" alt="Theory" height="70px" width="80px"><a  href="../../main ckt/main page/aim.html">Aim</a></li>
+	  <li ><img src="../../main ckt/theory.png" alt="Theory" height="70px"  width="70px"><a  href="../../main ckt/theory page/theory.html">Theory</a></li>
+	  <li><img src="../../main ckt/Procedure.jpg" alt="Theory" height="70px" width="70px"><a href="../../main ckt/procedure/procedure.html">Procedure</a></li>
+	  <li><img src="../../main ckt/test.png" alt="Theory" height="70px" class="active" width="70px"><a href="../../main ckt/quiz/index.html">Pre-Test</a></li>
+	  <li><img src="../../main ckt/simulation.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/simulator/sine.html">Simulation</a></li>
+	  <li><img src="../../main ckt\test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/postTest.html">Post-Test</a></li>
+	  <li><img src="../../main ckt/references.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/refres/references.html">References</a></li>
+	  <li><img src="../../main ckt/pdf.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/pdf generator/generatepdf.html">Generate PDF</a></li>
+	</ul>
+  		
+  	</div>
+	<div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:2400px; width:1160px;margin-bottom: 20px">
+		<div style="font-size:30px; text-align:center;padding-top: 5px">
+    		  <b> RC Phase Shift Oscillator </b>
+    	</div>
+	    
+		
+		<div id="inital" style="display: block;">
+			<h3 style="position: relative;top: 20px;left: 20px">click on start to start the quiz</h3>
+			<button id="start-quiz" onclick="loadquiz()" style="position:relative ;top: 20px;left: 20px">start</button>
+		</div>
+		
+		<div id="quiz body" style="position: absolute;top: 20px;left: 20px;display: none; ">
+			
+			<h3>Solve these questions</h3>
+			<div id="quiz"></div>
+			<button id="submit">Get Results</button>
+			<button id="secondbutton" style="display: none;">View Answers</button>
+			<button type="submit" id="selectedAns" style="display: none; position: relative;">download</button>
+			<div id="results"></div>
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
+</html>

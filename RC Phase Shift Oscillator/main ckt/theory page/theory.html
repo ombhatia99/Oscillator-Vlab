@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../../main ckt/maincss.css">
+    <title>Theory</title>
+  </head>
+  <body bgcolor="#000066">
+
+  	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+  	<ul>
+  	  <li ><img src="../../main ckt/aim.png" alt="Theory" height="70px" width="80px"><a  href="../../main ckt/main page/aim.html">Aim</a></li>
+	  <li ><img src="../../main ckt/theory.png" alt="Theory" height="70px" class="active" width="70px"><a  href="../../main ckt/theory page/theory.html">Theory</a></li>
+	  <li><img src="../../main ckt/Procedure.jpg" alt="Theory" height="70px" width="70px"><a href="../../main ckt/procedure/procedure.html">Procedure</a></li>
+	  <li><img src="../../main ckt/test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/index.html">Pre-Test</a></li>
+	  <li><img src="../../main ckt/simulation.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/simulator/sine.html">Simulation</a></li>
+	  <li><img src="../../main ckt\test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/postTest.html">Post-Test</a></li>
+	  <li><img src="../../main ckt/references.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/refres/references.html">References</a></li>
+	  <li><img src="../../main ckt/pdf.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/pdf generator/generatepdf.html">Generate PDF</a></li>
+	</ul>
+  		
+  	</div>
+  		
+
+  	<div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom: 20px">
+	  	<div style="font-size:30px; text-align:center;padding-top: 5px">
+    		  <b> RC Phase Shift Oscillator </b>
+    	</div>
+	    
+  	<h3 style="display: block; margin-left: 20px;">Theory:</h3>	
+  	<p>
+  		An <b> amplifier</b> circuit simply increases the signal strength. But while amplifying, it just increases the strength of its input signal whether it contains information or some noise along with information. This noise or some disturbance is introduced in the amplifiers because of their strong tendency to introduce hum due to sudden temperature changes or stray electric and magnetic fields. Therefore, every high gain amplifier tends to give noise along with signal in its output, which is very undesirable.<br><br>
+
+		The noise level in the amplifier circuits can be considerably reduced by using negative feedback done by injecting a fraction of output in phase opposition to the input signal.
+  	</p>
+  	<h3 style="display: block; margin-left: 20px;" >What is a Feedback Amplifier?</h3>
+  	<p>The feedback-amplifier can be defined as an amplifier which has feedback lane that exists between o/p  to input. In this type of amplifier, feedback is the limitation which calculates the sum of feedback given in the following amplifier. The feedback factor is the ratio of the feedback signal and the input signal.</p>
+  	<img src="feedbackAMP.png" alt="feedbackAMP">
+  	<h3 style="display: block; margin-left: 20px;" >Types of Feedback Amplifiers:</h3>
+  	<p>
+  		<b> 1. Positive Feedback Amplifier:</b><br>
+		The positive feedback can be defined as when the feedback current otherwise voltage is applied for increasing the i/p voltage, then it is named as positive feedback. Direct feedback is another name of this positive feedback. Because positive feedback generates unnecessary distortion; it is not often used in amplifiers. But, it amplifies the original signal power and can be used in oscillator circuits.<br><br>
+
+		<b> 2. Negative Feedback Amplifier:</b><br>
+		The negative feedback can be defined as if the feedback current otherwise voltage can be applied for reducing the amplifier i/p, then it is called as negative feedback. Inverse feedback is another name of this negative feedback. This kind of feedback is regularly used in amplifier circuits.
+  	</p>
+  	<img src="positiveAndnegative.png" alt="feedback types" style="width: 530px">
+  	<h3 style="display: block; margin-left: 20px;" >What is an Oscillator?</h3>
+  	<p>
+  		An <b>Oscillator</b> is basically an Amplifier  with <b>“Positive Feedback”</b>, or regenerative feedback (in-phase) and without any external input signal that generates an output waveform of a desired frequency.<br>
+		An oscillator is basically a waveform generator which generates an output waveform, which oscillates with constant amplitude & constant desired frequency. 
+  	</p>
+	<h3 style="display: block; margin-left: 20px;" >Barkhausen criterion:</h3>
+	<P>The frequency of oscillation at which sinusoidal oscillator operates is the frequency for which the total shift introduced, as the signal proceeds from the input terminals, through the amplifier and feedback network, and back again to the input, is precisely zero (or an integral multiple of<b> 2*Π</b>).</P>
+	<h4 style="text-align: center;">(OR)</h4>
+	<p>Stated simply the condition <b>A*β = -1</b> at <b>ω= ω<sub>o</sub></b>, i.e. the magnitude of loop gain should be one and phase of loop gain should be unity (the feedback network introduces 180<sup>0</sup> phase shift, the other 180<sup>0</sup> phase shift is provided by Amplifier) is called Barkhausen criterion.</p>
+	<img src="blockdiag.png" alt="block diagram">
+	<p>A closed loop system with negative feedback can be represented by a transfer function =<b> A/(1+A*β)</b>. Often feedback network consists of only resistive elements and is independent of frequency but amplifier gain is a function of frequency. Hence the loop gain A*β is a function of frequency. There may exist a frequency ω<sub>o</sub> at which its magnitude is one and phase is 180<sup>0</sup> i.e. A*β = -1 (Barkhausen criterion).</p>
+	<p>
+		In an <b>RC Oscillator</b>  circuit the input is shifted 180<sup>0</sup> through the feedback circuit returning the signal out-of-phase and 180<sup>0</sup> again through an inverting amplifier stage to produces the required positive feedback. This then gives us <b>“180<sup>0</sup> + 180<sup>0</sup> = 360<sup>0</sup>”</b>  of phase shift which is effectively the same as 0<sup>0</sup>, thereby giving us the required <b>positive feedback</b> . In other words, the total phase shift of the feedback loop should be “0” or any multiple of 360<sup>0</sup> to obtain the same effect.<br>
+	</p>
+	<img src="blockrc.png" alt="block">
+
+	<p>
+		In a Resistance-Capacitance Oscillator or simply known as an RC Oscillator, we can make use of the fact that a phase shift occurs between the input to a RC network and the output from the same network by using interconnected RC elements in the feedback branch, for example.<br>
+	</p>
+	<h3 style="display: block; margin-left: 20px;" >RC Phase-Shift Network:</h3>
+	<img src="RCnetwork.png" width="550px" alt="RC network">
+	<p>
+		The circuit on the left shows a single resistor-capacitor network whose output voltage “leads” the input voltage by some angle less than 90<sup>0</sup>. <br>
+		In a pure or ideal single-pole RC network. it would produce a maximum phase shift of exactly 90<sup>0</sup>, and because 180<sup>0</sup> of phase shift is required for oscillation, at least two single-poles networks must be used within an RC oscillator design.<br><br>
+
+		However in reality it is difficult to obtain exactly 90<sup>0</sup> of phase shift for each RC stage so we must therefore use more RC stages cascaded together to obtain the required value at the oscillation frequency. The amount of actual phase shift in the circuit depends upon the values of the resistor (R) and the capacitor (C), at the chosen frequency of oscillations with the phase angle ( φ ) being given as:<br>
+	</p>
+	<h3 style="display: block; margin-left: 20px;" >RC Phase Angle:</h3>
+	<img src="RCangle.png" alt="formula" height="200px" alt="phase angle formula">
+	<p>
+		Where: Xc is the Capacitive Reactance of the capacitor, R is the Resistance of the resistor, and ƒ is the Frequency.<br>
+
+		In our simple example above, the values of R and C have been chosen so that at the required frequency the output voltage leads the input voltage by an angle of about 60<sup>0</sup>. Then the phase angle between each successive RC section increases by another 60<sup>0</sup> giving a phase difference between the input and output of 180<sup>0</sup> (3 x 60<sup>0</sup>) as shown by the following vector diagram.<br>
+	</p>
+	<h3 style="display: block; margin-left: 20px;" >Vector Diagram:</h3>
+	<img src="vector.png" alt="vector diagram">
+	<p>
+		So by cascading together three such RC networks in series we can produce a total phase shift in the circuit of 180<sup>0</sup> at the chosen frequency and this forms the bases of a “RC Oscillator” otherwise known as a Phase Shift Oscillator as the phase angle is shifted by an amount through each stage of the circuit. <br>
+		Then the phase shift occurs in the phase difference between the individual RC stages. Conveniently op-amp circuits are available in quad IC packages. For example, the LM124, or the LM324, etc. so four RC stages could also be used to produce the required 180<sup>0</sup> of phase shift at the required oscillation frequency.<br><br>
+
+		We know that in an amplifier circuit either using a Bipolar Transistor or an Inverting Operational Amplifier configuration, it will produce a phase-shift of 180<sup>0</sup> between its input and output. If a three-stage RC phase-shift network is connected as a feedback network between the output and input of an amplifier circuit, then the total phase shift created to produce the required regenerative feedback is: 3 x 60<sup>0</sup> + 180<sup>0</sup> = 360<sup>0</sup> = 0<sup>0</sup> as shown.<br>
+	</p>
+	<img src="feedbackRC.png" alt="feedback network">
+	<p>The three RC stages are cascaded together to obtain the required slope for a stable oscillation frequency. The feedback loop phase shift is -180<sup>0</sup> when the phase shift of each stage is -60<sup>0</sup>. This occurs when ω = 2*pi*ƒ = 1.732/RC as (tan 60<sup>0</sup> = 1.732). Then to achieve the required phase shift in an RC oscillator circuit is to use multiple RC phase-shifting networks such as the circuit below.</p>
+	<h3 style="display: block; margin-left: 20px;" >Basic RC Oscillator Circuit:</h3>
+	<img src="basicRC.png" alt="basic ckt diagram" width="550px">
+	<p>
+		The basic <b>RC Oscillator </b> which is also known as a <b> Phase-shift Oscillator</b>, produces a sine wave output signal using regenerative feedback obtained from the resistor-capacitor (RC) ladder network. This regenerative feedback from the RC network is due to the ability of the capacitor to store an electric charge, (similar to the LC tank circuit).<br>
+
+		This resistor-capacitor feedback network can be connected as shown above to produce a leading phase shift (phase advance network) or interchanged to produce a lagging phase shift (phase retard network) the outcome is still the same as the sine wave oscillations only occur at the frequency at which the overall phase-shift is 360<sup>0</sup>.<br><br>
+
+		By varying one or more of the resistors or capacitors in the phase-shift network, the frequency can be varied and generally this is done by keeping the resistors the same and using a 3-ganged variable capacitor because capacitive reactance (Xc) changes with a change in frequency as capacitors are frequency-sensitive components. However, it may be required to re-adjust the voltage gain of the amplifier for the new frequency.<br>
+
+		If the three resistors, R are equal in value, that is <b> R1 = R2 = R3</b>, and the capacitors, C in the phase shift network are also equal in value, <b> C1 = C2 = C3</b>, then the frequency of oscillations produced by the RC oscillator is simply given as:<br>
+	</p>
+	<img src="RCformula.png" alt="frequency formula">
+	<p style="text-align: justify;">
+		Where:<br>
+		ƒr  is the oscillators output frequency in Hertz<br>
+		R   is the feedback resistance in Ohms<br>
+		C   is the feedback capacitance in Farads<br>
+		N   is the number of RC feedback stages<br>
+	</p>
+	<p>
+		This is the frequency at which the phase shift circuit oscillates. In our simple example above, the number of stages is given as three, so N = 3 (√2*3 = √6). For a four stage RC network, N = 4 (√2*4 = √8), etc.<br>
+
+		Since the resistor-capacitor combination in the RC Oscillator ladder network also acts as an attenuator, that is the signal reduces by some amount as it passes through each passive stage.<br><br>
+		 It could be assumed that the three phase shift sections are independent of each other but this is not the case as the total accumulative feedback attenuation becomes -1/29th ( Vo/Vi = β = -1/29 ) across all three stages. <br>
+		Thus the voltage gain of the amplifier must be sufficiently high enough to overcome these passive RC losses. <br>Clearly then in order to produce a total loop gain of -1, in our three stage RC network above, the amplifier gain must be equal to, or greater than, 29 to compensate for the attenuation of the RC network.<br>
+	</p>
+
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>

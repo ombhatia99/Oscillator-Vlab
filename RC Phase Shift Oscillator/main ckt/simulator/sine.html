@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RC phase Shift oscillator</title>
+    <meta charset="utf-8">
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../main ckt/maincss.css">
+    <link rel="stylesheet" type="text/css" href="ceampcss.css">
+</head>
+<body bgcolor="#000066">
+
+    <div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+    <ul>
+      <li ><img src="../../main ckt/aim.png" alt="Theory" height="70px" width="80px"><a  href="../../main ckt/main page/aim.html">Aim</a></li>
+      <li ><img src="../../main ckt/theory.png" alt="Theory" height="70px"  width="70px"><a  href="../../main ckt/theory page/theory.html">Theory</a></li>
+      <li><img src="../../main ckt/Procedure.jpg" alt="Theory" height="70px" width="70px"><a href="../../main ckt/procedure/procedure.html">Procedure</a></li>
+      <li><img src="../../main ckt/test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/index.html">Pre-Test</a></li>
+      <li><img src="../../main ckt/simulation.png" alt="Theory" height="70px" class="active" width="70px"><a href="../../main ckt/simulator/sine.html">Simulation</a></li>
+      <li><img src="../../main ckt\test.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/quiz/postTest.html">Post-Test</a></li>
+      <li><img src="../../main ckt/references.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/refres/references.html">References</a></li>
+      <li><img src="../../main ckt/pdf.png" alt="Theory" height="70px" width="70px"><a href="../../main ckt/pdf generator/generatepdf.html">Generate PDF</a></li>
+    </ul>
+        
+    </div>
+      
+    <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:2350px; width:1160px;font-size: 16px;margin-bottom: 20px">
+
+        <div style="font-size:25px; text-align:center;padding-right:90px; height:60px">
+          <b> RC Phase Shift Oscillator </b>
+        </div>
+        <div id="ckt_values1" style="position:absolute;top:80px;width:605px;height:450px;left:40px;">
+            <p>
+                <img src ="RC-phase-shift-oscillator.png" style="width:600px;height:400px;position:absolute;right:0px" /> 
+           	</p>
+
+            <!--border:none-->
+            <input type="text" name="resis" id="c1"  value="" readonly style="position:absolute;top:215px;right:510px;width:55px"> 
+            <input type="text" name="resis" id="rb"  value="" readonly style="position:absolute;top:140px;right:280px;width:55px"> 
+            <input type="text" name="resis" id="r3" value="" readonly style="position:absolute;top:330px;right:320px;width:55px"> 
+            <input type="text" name="resis" id="ce"  value="" readonly  style="position:absolute;top:345px;right:25px;width:55px"> 
+            <input type="text" name="resis" id="cc"  value=""  readonly style="position:absolute;top:210px;right:85px;width:55px"> 
+            <input type="text" name="resis" id="c3"  value="" readonly style="position:absolute;top:215px;right:320px;width:55px"> 
+            <input type="text" name="resis" id="r2"  value="" readonly style="position:absolute;top:330px;right:415px;width:55px"> 
+            <input type="text" name="resis" id="c2"  value="" readonly style="position:absolute;top:215px;right:415px;width:55px"> 
+            <input type="text" name="resis" id="rc"  value="" readonly style="position:absolute;top:135px;right:85px;width:55px"> 
+            <input type="text" name="resis" id="re"  value="" readonly style="position:absolute;top:330px;right:200px;width:55px"> 
+            <input type="text" name="resis" id="r1"  value="" readonly style="position:absolute;top:330px;right:510px;width:55px"> 
+
+        </div>
+        <div id="description" style="background-color: #3385ff; position:absolute; top:10px; left:10px; width:360px;font-size: 16px;">
+            <div class="dropdown">
+                <p style="text-align:center;padding-right:150px;color:white"> INSTRUCTION</p>
+                <div class="dropdown-content">
+                    <ul>
+                    <li><b>Part 1:</b>Use these values and perform the experiment.</li>
+                    
+                    <ol type="1">
+                        <li>Set R1=R2=R3=10k&#937;</li>
+                        <li>Set C1=C2=C3=0.1&#956;F</li>
+                        <li>Set Rb=10k&#937;</li>
+                        <li>Set Re=1k&#937;</li>
+                        <li>Set Rc=3.9k&#937;</li>
+                        <li>Set Cc=10&#956;F</li>
+                        <li>Set Ce=100&#956;F</li>
+                    </ol> 
+                    
+                    <li><b>Note:</b> The values of Capacitors and Inductors should <b>STRICTLY</b> lie in range Of micro units as shown in Controls Section.While designing the circuit Conider Rb=R<sub>b1</sub> ||R<sub>b2</sub></p></li>
+                    <li><b>Part 2:</b>Solve questions as directed and perform the experiment for given values of Capcitors and Inductors.</li>
+
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="cntrwrap" style="position:absolute;border: 2px solid #3385ff; top:20px;width:430px;height:430px;right:10px;">
+            <div id="cntrlr" style="position:absolute; background-color:#3385ff;   height:50px; top:0px; right:0px; width:430px;font-size: 16px;font-weight: bold;">
+                <p style="text-align:center;padding-right:230px;color:white">
+                	<b>CONTROLS</b>
+                </p>
+             </div>
+            <div id="slide" style=" position:absolute; top:52px; right:0px;height:400px; width:433px;  border-radius: 10px;">
+
+                
+                &nbsp;&nbsp; Collector Resistance(R<sub>c</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="rcin" min="100" max="500000" step="100" value="100" oninput="rcChange()" style="width:180px"> &nbsp; &#937;<br>
+                &nbsp;&nbsp; Emitter Resistance(R<sub>E</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="rein"  min="100" max="500000" step="100" value="100" oninput="reChange()" style="width:180px"> &nbsp; &#937;<br>
+                
+                &nbsp;&nbsp; Base Resistance(R<sub>b</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="rbin" min="100" max="500000" step="100" value="100" oninput="rbChange()" style="width:180px"> &nbsp; &#937;<br>
+                
+                &nbsp;&nbsp; Coupling Capacitor(C<sub>c</sub>) :&nbsp;&nbsp; <input type="range" name="resis" id="ccin" min="0.000" max="100000" step="0.05" value="1" oninput="ccChange()" style="width:180px"> &nbsp; &#956;F<br>
+                &nbsp;&nbsp; Bypass Capacitance(C<sub>e</sub>) :&nbsp;&nbsp;<input type="range" name="resis" id="cein" min="0.000" max="100000" step="0.05" value="1" oninput="ceChange()" style="width:180px"> &nbsp; &#956;F<br>
+                &nbsp;&nbsp; Resistance(R<sub>1</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="r1in" min="100" max="500000" step="100" value="100" oninput="r1Change()" style="width:180px"> &nbsp; &#937;<br>
+                &nbsp;&nbsp; Resistance(R<sub>2</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="r2in" min="100" max="500000" step="100" value="100" oninput="r2Change()" style="width:180px"> &nbsp; &#937;<br>
+                &nbsp;&nbsp; Resistance(R<sub>3</sub>) : &nbsp;&nbsp;<input type="range" name="resis" id="r3in" min="100" max="500000" step="100" value="100" oninput="r3Change()" style="width:180px"> &nbsp; &#937;<br>
+                &nbsp;&nbsp; Capacitor(C<sub>1</sub>) :&nbsp;&nbsp; <input type="range" name="resis" id="c1in" min="0.000" max="100000" step="0.05" value="1" oninput="c1Change()" style="width:180px"> &nbsp; &#956;F<br>
+                &nbsp;&nbsp; Capacitor(C<sub>2</sub>) :&nbsp;&nbsp; <input type="range" name="resis" id="c2in" min="0.000" max="100000" step="0.05" value="1" oninput="c2Change()" style="width:180px"> &nbsp; &#956;F<br>
+                &nbsp;&nbsp; Capacitor(C<sub>3</sub>) :&nbsp;&nbsp; <input type="range" name="resis" id="c3in" min="0.000" max="100000" step="0.05" value="1" oninput="c3Change()" style="width:180px"> &nbsp; &#956;F<br>
+                <br>
+                 
+                <input type="button" id="plt" value="Plot" onclick="plotGraph()" style="position:absolute; width:100px; right:180px;cursor:pointer; background-color: #3385ff"/>  
+                <input type="button" id="clr" value="Clear" onclick="cleard()" style="position:absolute; width:100px; right:50px;cursor:pointer;background-color: #3385ff"/>
+            </div>
+        </div>
+		<div id="tblwrap" style="position:relative; top:470px;left:80px; height:450px; width:1050px;border:2px solid #3385ff;">
+            <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:0px;left:0px; width:1050px; height:50px;font-weight: bold;">
+                <p style="text-align:center;padding-right:810px;color:white"> <b>OUTPUT GRAPH</b></p>
+            </div>
+            <canvas id="myChart" style="position: relative;top:50px; height: 350px; width: 100%;">
+
+        </div>
+        <div id="outputCheck" style="position:relative; top:490px;left:80px; height:200px; width:1050px;border:2px solid #3385ff;">
+            <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:0px;left:0px; width:1050px; height:50px;font-weight: bold;">
+                <p style="text-align:center;padding-right:810px;color:white"> <b>Check Output</b></p>
+            </div>
+            <ul style="position:absolute;font-size: 18px; top:50px;left:0px; width:1050px;">
+              <li>What is the Output Frequency of The Graph Shown? </li> 
+              <p style="position: relative;font-size: 15px;margin-bottom: 5px;margin-top: 5px;font-style: italic;color: grey">(<b> Note: </b>Your answer should be rounded up to 3 decimals)</p>
+              <input type="text" id="Check" name="outputCheck" value="" style="border: 1px solid black;outline-style: solid; outline-width: thin;">
+              <input type="button" id="CheckOutput" value="Check" onclick="checkOutput()" style="position: relative;display: block;margin-top: 10px; width: 100px; background-color: #3385ff">
+
+            </ul>
+
+        </div>
+
+        <div id="Extra-act" style="position:relative; top:520px;left:80px; height:1060px; width:1050px;border:2px solid #3385ff;">
+            <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:0px;left:0px; width:1050px; height:50px;font-weight: bold;">
+                <p style="text-align:center;padding-right:810px;color:white"> <b>EXTRA ACTIVITY</b></p>
+            </div>
+            <ul style="position:absolute;font-size: 18px; top:50px;left:0px; width:1050px; ">
+                <li><b> Design a RC Phase Shift Oscillator of any frequency using the steps given and note down the below things:</b></li>
+                <table>
+                      <tr>
+                        <th>Amplitude(Volts)</th>
+                        <th>Time Period(ms)</th> 
+                        <th>Frequency (KHz)</th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      
+                    </table>
+                <li style="padding-top: 10px"><b>Designing of CE amplifier:</b></li>
+                <p>From the transistor data sheet, for BC547A get the parameters like hfe = β , I<sub>Cmax</sub>, V<sub>CEmax</sub><br> Link url for data sheet:
+                <a style=" margin-left: 20px;" href="https://pdf1.alldatasheet.com/datasheet-pdf/view/430061/MCC/BC547A.html">https://pdf1.alldatasheet.com/datasheet-pdf/view/430061/MCC/BC547A.html</a></p>
+                <p> Let Vcc =12V, Ic = 2mA. Since the quiescent point is in the middle of the load line for the amplifier, 
+                </p>
+                <img src="designsteps.png" height="630px" width="650px">
+                <li>Designing Steps of RC network:
+                    <ol>
+                        <li>Assume C=0.01uf</li>
+                        <li>Find the value of R1=R2=R3=R in (RC section) using formula of frequency of oscillation.</li>
+                    </ol>
+
+                </li>
+                
+
+            </ul>
+
+
+        </div>        
+
+   </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.0/math.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="hartley.js"></script>
+</body>
+</html>
